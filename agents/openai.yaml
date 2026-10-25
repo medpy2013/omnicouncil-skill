@@ -1,0 +1,7 @@
+# Copyright 2026 Mohamed Aouaci
+# SPDX-License-Identifier: Apache-2.0
+interface:
+  display_name: "OmniCouncil"
+  short_description: "Explicitly invoked critique and revision workflow"
+policy:
+  allow_implicit_invocation: false
