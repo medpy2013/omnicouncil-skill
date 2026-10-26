@@ -8,6 +8,8 @@
 
 [Download OmniCouncil v1.3.0](https://github.com/medpy2013/omnicouncil-skill/raw/refs/heads/main/onlySkills.zip)
 
+![OmniCouncil workflow and factuality-check diagram](assets/omnicouncil-process.svg)
+
 ## Workflow
 
 1. A relevant specialist frames the key principle, evidence, and unknowns.
