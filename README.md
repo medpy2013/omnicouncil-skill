@@ -2,46 +2,40 @@
 
 # OmniCouncil
 
-OmniCouncil is an explicitly invoked skill for a concise, structured review before an answer or artifact. It uses specialist, engineer, Devil’s Advocate, skeptical end-user, and Maestro perspectives, then delivers a revised result. It is designed for coding and general chat work, with domain references selected as needed.
+[العربية](README.ar.md)
 
-The role labels are simulated perspectives from the model using the skill. They are not independent people, expert credentials, or proof of correctness. The skill asks for visible conclusions and critiques, not private hidden chain-of-thought.
+**A manually invoked AI skill for structured critique, factuality checks, and delivery of the authorized task.** It routes coding and general requests to only the relevant domain guidance.
 
-## Invoke only when wanted
+[Download OmniCouncil v1.3.0](https://github.com/medpy2013/omnicouncil-skill/raw/refs/heads/main/onlySkills.zip)
 
-In Codex, install the `omnicouncil` folder as a skill and invoke it explicitly with `$omnicouncil`. The Codex-specific `agents/openai.yaml` sets `allow_implicit_invocation: false`, so Codex should not load it automatically based only on topic.
+## Workflow
 
-Other platforms may not support this setting. On those platforms, install or attach the files as their documentation requires and explicitly request `$omnicouncil` (or “Use OmniCouncil”) in the task. If a platform cannot preserve explicit-only behavior or load references, use the main `SKILL.md` directly and attach only the relevant reference file. Do not describe a platform as compatible until you have checked and tested that platform’s current skill mechanism.
+1. A relevant specialist frames the key principle, evidence, and unknowns.
+2. The engineer proposes a concrete first approach.
+3. Devil’s Advocate and a skeptical end user test failure modes and usability. They may report no material flaw rather than invent one.
+4. The proposal is revised to resolve valid criticism or bound remaining risk.
+5. Maestro delivers the usable result and reports what was actually verified.
 
-## Package contents
+These are simulated perspectives from one model unless the host actually starts separate agents. The skill does not expose hidden chain-of-thought or replace doing the requested work.
 
-- `SKILL.md` — invocation boundary, council workflow, routing, quality and output rules.
-- `agents/openai.yaml` — Codex UI metadata and explicit-only invocation policy.
-- `references/` — seven selective domain reference modules.
-- `examples/deliberation-examples.md` — sample output, including a case with no material flaw.
-- `EVALUATION.md` — manual behavior checks and release checklist.
-- `LICENSE` — Apache License 2.0.
-- `INSTRUCTION-GUIDE.md` — intended influence and limits of each instruction.
+## Candor and hallucination limits
 
-The references are not separate auto-installed skills. The main skill tells the model to read only the relevant reference. Whether a host can load linked files on demand depends on that host.
+The “AI agrees with the boss” comparison is a metaphor for over-agreement and unsupported confidence. Models do not literally feel fear or intend to lie. For important factual claims, OmniCouncil asks the model to form neutral verification questions, check source material, seek counterevidence, verify calculations and quotations, and mark what remains unknown.
 
-## Install in Codex
+These instructions aim to reduce avoidable errors. They cannot stop hallucinations or guarantee a fixed improvement. No percentage reduction has been measured for this package. A paired evaluation protocol is included in the ZIP.
 
-Copy the whole `omnicouncil` folder into `~/.codex/skills/omnicouncil/`, preserving `SKILL.md`, `agents/`, `references/`, `examples/`, and the other documentation. Restart or refresh skill discovery if needed, then invoke it with `$omnicouncil`.
+## Invoke only when you want it
 
-The downloadable ZIP should have one top-level `omnicouncil/` directory so that extracting it into the Codex skills directory creates the expected skill folder. When using the repository directly, its root may itself be the skill folder.
+In Codex, extract the ZIP and place the omnicouncil folder under ~/.codex/skills/omnicouncil/, then invoke it with $omnicouncil. Codex metadata disables implicit invocation.
 
-## Use with general chat tools
+Claude Code can use /omnicouncil with its host-specific manual-only setting. Gemini CLI may activate skills automatically by relevance, so this package cannot guarantee manual-only invocation there. For other AI apps, attach SKILL.md and the relevant reference file and explicitly request OmniCouncil. Skill support depends on the host application, not the model alone.
 
-There is no universal skill installation mechanism across chat products. If a tool supports reusable instructions or skill files, follow its documentation and include the main file plus any references it can access. Otherwise, paste or attach `SKILL.md` and explicitly request OmniCouncil in the prompt. Add the single relevant reference when the task needs domain-specific checks. Without the reference files, the router cannot provide their detailed guidance.
+## Package and checks
 
-## Limits
+The ZIP contains the portable skill, seven selective references, examples, English and Arabic guides, installation steps, evaluation protocols, visual assets, and Apache-2.0 license. It extracts to one top-level omnicouncil/ folder. Structural manifest and archive checks passed for v1.3.0; manual model behavior tests have not yet been run.
 
-- A prompt steers model behavior; it cannot guarantee the skill is invoked, that every role adds useful insight, or that the final answer is correct.
-- All council roles may be generated by one model. The skill does not create independent debate or independent verification.
-- Requiring a visible council can add length and latency. For simple tasks, keep it to short useful points. For strict formats such as JSON-only, the skill applies the checks silently to preserve the requested format.
-- Higher-priority instructions, safety rules, unavailable tools, and platform limits take precedence.
-- Do not treat an untested platform, model, or version as verified compatible.
+Never advertise 100% reliability or an unmeasured hallucination reduction. See the included evaluation guide before making performance claims.
 
-## Before public release
+## License
 
-Run the checks in `EVALUATION.md` on the target platform(s) and record platform/model/version and results. This package includes Apache-2.0; confirm you have authority to apply it to all included material. A structural validator can check the manifest but cannot establish behavioral quality. Do not claim “100% reliable,” “works everywhere,” or “bug-free.”
+Apache-2.0. Copyright 2026 Mohamed Aouaci. See LICENSE.
