@@ -1,1 +1,67 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 390" role="img" aria-labelledby="title desc"><title id="title">OmniCouncil review and delivery flow</title><desc id="desc">Six stages: specialist framing, engineer proposal, devil’s advocate, skeptical user, revision, and maestro delivery, with evidence checks throughout.</desc><defs><linearGradient id="bg" x1="0" x2="1"><stop stop-color="#f1f5ff"/><stop offset="1" stop-color="#f4fbf8"/></linearGradient><marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 Z" fill="#7890ad"/></marker><style>text{font-family:Inter,Segoe UI,Arial,sans-serif}.card{fill:#fff;stroke:#d9e2ef;stroke-width:2}.step{font-size:14px;font-weight:700;letter-spacing:1px;fill:#536982}.label{font-size:18px;font-weight:700;fill:#142438}.detail{font-size:13px;fill:#465a70}.conn{stroke:#7890ad;stroke-width:3;marker-end:url(#arrow)}</style></defs><rect width="1200" height="390" rx="24" fill="url(#bg)"/><text x="600" y="48" text-anchor="middle" font-size="25" font-weight="750" fill="#142438">From first proposal to checked delivery</text><text x="600" y="76" text-anchor="middle" font-size="14" fill="#536982">A concise review method with evidence checks, not independent human experts</text><g transform="translate(38 112)"><rect class="card" x="0" y="0" width="170" height="132" rx="16"/><text class="step" x="18" y="27">01 · FRAME</text><text class="label" x="18" y="58">Specialist</text><text class="detail" x="18" y="83"><tspan x="18">Principle and evidence</tspan><tspan x="18" dy="19">plus key unknowns</tspan></text><path class="conn" d="M174 66 H198"/><rect class="card" x="200" y="0" width="170" height="132" rx="16"/><text class="step" x="218" y="27">02 · PROPOSE</text><text class="label" x="218" y="58">Engineer</text><text class="detail" x="218" y="83"><tspan x="218">Concrete first approach</tspan><tspan x="218" dy="19">matched to the task</tspan></text><path class="conn" d="M374 66 H398"/><rect class="card" x="400" y="0" width="170" height="132" rx="16"/><text class="step" x="418" y="27">03 · CHALLENGE</text><text class="label" x="418" y="58">Advocate</text><text class="detail" x="418" y="83"><tspan x="418">Test strongest plausible</tspan><tspan x="418" dy="19">failure mode</tspan></text><path class="conn" d="M574 66 H598"/><rect class="card" x="600" y="0" width="170" height="132" rx="16"/><text class="step" x="618" y="27">04 · TEST USE</text><text class="label" x="618" y="58">Skeptical user</text><text class="detail" x="618" y="83"><tspan x="618">Clarity, effort, and</tspan><tspan x="618" dy="19">likely confusion</tspan></text><path class="conn" d="M774 66 H798"/><rect class="card" x="800" y="0" width="170" height="132" rx="16"/><text class="step" x="818" y="27">05 · REVISE</text><text class="label" x="818" y="58">Resolution</text><text class="detail" x="818" y="83"><tspan x="818">Fix valid flaws;</tspan><tspan x="818" dy="19">bound what remains</tspan></text><path class="conn" d="M974 66 H998"/><rect class="card" x="1000" y="0" width="170" height="132" rx="16"/><text class="step" x="1018" y="27">06 · DELIVER</text><text class="label" x="1018" y="58">Maestro</text><text class="detail" x="1018" y="83"><tspan x="1018">Usable result and</tspan><tspan x="1018" dy="19">honest verification</tspan></text></g><rect x="38" y="278" width="1132" height="74" rx="16" fill="#173a5e"/><text x="64" y="308" font-size="13" font-weight="700" letter-spacing="1" fill="#9fd6c4">FACTUALITY CHECK</text><text x="64" y="334" font-size="16" font-weight="600" fill="#fff">Neutral claim checks · source evidence · counterevidence · calculations and quotes · explicit unknowns</text></svg>
+<!-- Copyright 2026 Mohamed Aouaci. SPDX-License-Identifier: Apache-2.0 -->
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">OmniCouncil: candid critique, revision, and delivery</title>
+  <desc id="desc">The first panel shows a known model interaction risk: a prompt's framing may be echoed as an overconfident answer. It does not represent literal fear or intent. The second panel shows OmniCouncil's six stages: specialist framing, engineer proposal, two critiques, evidence-based revision, and delivery with verification.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0b1220"/><stop offset="1" stop-color="#172554"/></linearGradient>
+    <linearGradient id="accent" x1="0" x2="1"><stop stop-color="#22d3ee"/><stop offset="1" stop-color="#a78bfa"/></linearGradient>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M1 1L11 6L1 11" fill="none" stroke="#8294b8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></marker>
+    <style>
+      .h{font:700 30px Inter,Segoe UI,Arial,sans-serif;fill:#f8fafc}.sub{font:400 15px Inter,Segoe UI,Arial,sans-serif;fill:#b7c5dc}.label{font:700 13px Inter,Segoe UI,Arial,sans-serif;letter-spacing:1.1px;fill:#a5f3fc}.card{fill:#101b30;stroke:#344563;stroke-width:1.5}.ct{font:700 17px Inter,Segoe UI,Arial,sans-serif;fill:#f8fafc}.body{font:400 13px Inter,Segoe UI,Arial,sans-serif;fill:#c4d0e4}.mini{font:600 12px Inter,Segoe UI,Arial,sans-serif;fill:#dbeafe}.muted{font:400 12px Inter,Segoe UI,Arial,sans-serif;fill:#9fb0cc}
+    </style>
+  </defs>
+  <rect width="1200" height="720" rx="28" fill="url(#bg)"/>
+  <circle cx="1080" cy="70" r="180" fill="#7c3aed" opacity=".08"/>
+  <circle cx="80" cy="680" r="190" fill="#06b6d4" opacity=".06"/>
+
+  <text x="56" y="61" class="label">OMNICOUNCIL · HOW IT WORKS</text>
+  <text x="56" y="103" class="h">A review process that ends in a usable result</text>
+  <text x="56" y="131" class="sub">A prompt can steer a model; evidence checks and honest reporting reduce avoidable mistakes.</text>
+
+  <rect x="52" y="160" width="1096" height="172" rx="18" fill="#141d31" stroke="#4b3447" stroke-width="1.5"/>
+  <text x="76" y="192" class="label" fill="#fda4af">A COMMON INTERACTION RISK · NOT LITERAL FEAR OR INTENT TO DECEIVE</text>
+
+  <rect x="76" y="215" width="260" height="82" rx="13" class="card"/>
+  <text x="96" y="245" class="ct">User prompt</text>
+  <text x="96" y="268" class="body">May include a strong frame or claim</text>
+  <path d="M344 256H388" stroke="#8294b8" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <rect x="403" y="215" width="295" height="82" rx="13" class="card"/>
+  <text x="423" y="245" class="ct">One-shot response</text>
+  <text x="423" y="268" class="body">Can mirror the frame or sound certain</text>
+  <path d="M706 256H750" stroke="#8294b8" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <rect x="765" y="215" width="354" height="82" rx="13" fill="#2a1a2c" stroke="#805065" stroke-width="1.5"/>
+  <text x="786" y="245" class="ct">Risk to check</text>
+  <text x="786" y="268" class="body">Over-agreement · weak evidence · missing caveat</text>
+
+  <text x="56" y="385" class="label">OMNICOUNCIL · EXPLICITLY INVOKED</text>
+  <text x="56" y="414" class="sub">Short, simulated role perspectives guide a real revision and the requested work.</text>
+
+  <path d="M137 517H1067" stroke="#415170" stroke-width="3" marker-end="url(#arrow)"/>
+  <g transform="translate(56 460)">
+    <rect width="158" height="136" rx="15" class="card"/><circle cx="24" cy="25" r="15" fill="#164e63"/><text x="20" y="30" class="mini">1</text>
+    <text x="18" y="66" class="ct">Specialist</text><text x="18" y="91" class="body">Frames the problem</text><text x="18" y="112" class="body">and key unknowns.</text>
+  </g>
+  <g transform="translate(242 460)">
+    <rect width="158" height="136" rx="15" class="card"/><circle cx="24" cy="25" r="15" fill="#164e63"/><text x="20" y="30" class="mini">2</text>
+    <text x="18" y="66" class="ct">Engineer</text><text x="18" y="91" class="body">Makes a concrete</text><text x="18" y="112" class="body">first proposal.</text>
+  </g>
+  <g transform="translate(428 460)">
+    <rect width="158" height="136" rx="15" class="card"/><circle cx="24" cy="25" r="15" fill="#6d28d9"/><text x="20" y="30" class="mini">3</text>
+    <text x="18" y="66" class="ct">Critics</text><text x="18" y="91" class="body">Test failure and</text><text x="18" y="112" class="body">user impact.</text>
+  </g>
+  <g transform="translate(614 460)">
+    <rect width="158" height="136" rx="15" class="card"/><circle cx="24" cy="25" r="15" fill="#6d28d9"/><text x="20" y="30" class="mini">4</text>
+    <text x="18" y="66" class="ct">Revise</text><text x="18" y="91" class="body">Resolve valid critique;</text><text x="18" y="112" class="body">bound remaining risk.</text>
+  </g>
+  <g transform="translate(800 460)">
+    <rect width="158" height="136" rx="15" class="card"/><circle cx="24" cy="25" r="15" fill="#6d28d9"/><text x="20" y="30" class="mini">5</text>
+    <text x="18" y="66" class="ct">Do the work</text><text x="18" y="91" class="body">Use authorized tools</text><text x="18" y="112" class="body">when available.</text>
+  </g>
+  <g transform="translate(986 460)">
+    <rect width="158" height="136" rx="15" fill="#17263d" stroke="url(#accent)" stroke-width="2"/><circle cx="24" cy="25" r="15" fill="#0e7490"/><text x="20" y="30" class="mini">6</text>
+    <text x="18" y="66" class="ct">Maestro</text><text x="18" y="91" class="body">Delivers and reports</text><text x="18" y="112" class="body">what was verified.</text>
+  </g>
+  <text x="56" y="655" class="muted">Roles are simulated by the model unless separate agents are actually run. Instructions reduce risk; they do not guarantee correctness.</text>
+</svg>

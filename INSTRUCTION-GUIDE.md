@@ -16,7 +16,9 @@ This guide explains what the skill text is intended to influence. It does not pr
 | First principles and consequences | Encourage assumption checks and consideration of plausible downstream effects. | Effects are considered only when meaningful; this is not a substitute for evidence, testing, or domain review. |
 | Revision before Maestro | Make valid criticism change or constrain the final proposal. | The model can acknowledge criticism without fully resolving it; inspect the final result. |
 | Concise role-labeled output | Make the review legible without revealing private chain-of-thought. | The summary is selective, not a transcript or proof of internal reasoning. |
-| Evidence and verification | Encourage current-source checks and accurate reporting of what was checked. | Tools may be unavailable or incomplete. No source, test, or tool use may be fabricated. |
+| Evidence and verification | Turn important claims into neutral checks, verify against source material where possible, seek counterevidence, check calculations/quotes, and report what was actually verified. | Tools may be unavailable or incomplete. A same-model self-check is fallible; no source, test, or tool use may be fabricated. |
+| Candor and premise checks | Encourage independent assessment, respectful correction, explicit uncertainty, and separation of observed facts, source-supported claims, inferences, and unknowns. | A prompt cannot reliably eliminate hallucination, sycophancy, or mistaken conclusions. The model has no literal fear or intent. |
+| Complete the authorized task | Keep roleplay from replacing requested implementation, research, or artifact creation; verify concrete work where tools permit and state what remains. | Tools, permissions, platform rules, and missing context can prevent completion. The model must not claim success without evidence. |
 | Strict-format preservation | Avoid breaking exact schemas such as JSON-only. | In those cases the visible council is omitted; the review is not externally inspectable. |
 | Safety and authorization boundaries | Keep simulated debate from granting permission for external actions. | The active system, platform, and user authorization rules remain authoritative. |
 
@@ -30,4 +32,4 @@ This guide explains what the skill text is intended to influence. It does not pr
 - `references/writing.md` — audience, purpose, ambiguity, and downstream interpretation.
 - `references/general.md` — fallback for tasks outside those domains.
 
-The router does not create independently installed subskills. It recommends which reference to consult.
+The router does not create independently installed subskills. It recommends which reference to consult. The skill is version 1.3.1; Codex has a separate `agents/openai.yaml` manual-only policy, while Claude Code users add its host-specific frontmatter key during installation. Gemini CLI and other hosts may not offer an equivalent control.
